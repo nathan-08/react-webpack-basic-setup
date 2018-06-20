@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-sass": "^4.9.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
