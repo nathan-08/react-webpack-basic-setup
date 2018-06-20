@@ -24,6 +24,7 @@ module.exports = {
           loader: "babel-loader"
         }
       },
+      // USE THIS if you are using CSS instead of SASS
       // {
       //   test: /\.css$/,
       //   use: [
@@ -42,6 +43,7 @@ module.exports = {
       //     }
       //   ]
       // }
+      // USE THIS if you are using SASS
       {
         test: /\.sass$/,
         use: [
