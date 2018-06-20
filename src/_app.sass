@@ -1,9 +1,21 @@
 body
     background: #00aacc
+.rotate
+    height: 100px
+    width: 100px
+    margin: 100px
+    background: orange
+    border: 1px solid black
+    animation: rotate 2s linear infinite
 blockquote
+    display: grid
     border-radius: 4px
     background: #eee
-    padding: 1rem
+    padding: 11rem
+    background: linear-gradient(to top, #00aacc 40%, #444 140%)
+    &::selection
+        color: yellow
+        background: black
 .container
     background: teal
     padding: 1rem
@@ -15,3 +27,8 @@ blockquote
     transition: background .3s ease-in-out
     &:hover
         background: orange
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)

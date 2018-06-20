@@ -5,3 +5,7 @@
 ### `npm run start` to start the dev server
 
 ### `npm run build` to build
+
+### autoprefixer
+
+- type `npx autoprefixer --info` in the project directory to see list of autoprefixer rules

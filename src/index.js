@@ -6,6 +6,7 @@ const Index = () => {
   return (
     <div>
       <blockquote>Webpack react setup</blockquote>
+      <div className="rotate" />
     </div>
   );
 };

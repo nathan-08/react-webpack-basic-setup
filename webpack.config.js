@@ -55,6 +55,9 @@ module.exports = {
             loader: "css-loader" // translates CSS into CommonJS
           },
           {
+            loader: "postcss-loader" // autoprefixer for vendor-specific prefixes
+          },
+          {
             loader: "sass-loader" // compiles SASS to CSS
           }
         ]

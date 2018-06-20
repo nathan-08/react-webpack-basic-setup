@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^8.6.3",
     "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sass-loader": "^7.0.3"
