@@ -24,28 +24,9 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      // USE THIS if you are using CSS instead of SASS
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     {
-      //       loader: "style-loader"
-      //     },
-      //     {
-      //       loader: "css-loader",
-      //       options: {
-      //         modules: true,
-      //         importLoaders: 1,
-      //         localIdentName: "[name]_[local]_[hash:base64]",
-      //         sourceMap: true,
-      //         minimize: true
-      //       }
-      //     }
-      //   ]
-      // }
-      // USE THIS if you are using SASS
       {
         test: /\.sass$/,
+        exclude: /node_modules/,
         use: [
           // WP uses loaders in an array from last to first
           {
@@ -61,6 +42,19 @@ module.exports = {
             loader: "sass-loader" // compiles SASS to CSS
           }
         ]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8000, // Convert images < 8kb to base64 strings
+              name: "images/[hash]-[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
@@ -68,6 +62,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 9000
+    port: 9000,
+    hot: true
   }
 };

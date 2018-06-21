@@ -1,5 +1,5 @@
 {
-  "name": "Webpack-react",
+  "name": "Webpack_React",
   "version": "1.0.0",
   "description": "React app simple webpack setup",
   "main": "index.js",
@@ -12,11 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^8.6.3",
+    "file-loader": "^1.1.11",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "sass-loader": "^7.0.3"
+    "sass-loader": "^7.0.3",
+    "url-loader": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
